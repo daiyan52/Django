@@ -1,0 +1,54 @@
+1. Creation of django project
+
+django-admin startproject my_project
+
+2. Creation of django Applications
+
+python3 manage.py startapp testapp
+
+3. Add application to settings.py
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'testapp'
+]
+
+4. Define our functionality inside views.py file
+
+from django.http import HttpResponse
+# Create your views here.
+def display(request):
+
+    s = '<h1>My first Django app</h1>'
+    return HttpResponse(s)
+
+
+5. Create url-pattern for our view
+
+This url-pattern meant for end ueser.
+
+urls.py
+-------------
+
+from django.urls import path
+from testapp import views
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('hello/',views.display)
+]
+
+6. run server.
+-----
+
+python3 manage.py runserver
+
+
+7. send request
+--------
+
+http://127.0.0.1:8000/hello

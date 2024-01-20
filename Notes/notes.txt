@@ -1,0 +1,96 @@
+Django
+    --> Framework
+    --> Web Applications
+    --> Free 
+    --> Open Source
+
+It is free and opensource web Framework
+
+        gmail.com
+        facebook.com
+        telegram.org
+        amazon.in
+
+web Applications
+freeware
+java --> paid
+c#.Net --> paid
+
+open source --> source code is open for all
+
+
+It is free and opensource web Framework
+It is written in python
+
+Django follow MVT(Model-view-Template) architecture pattern.
+Django is maintained by DSF(Django software Foundation)
+
+python --> PSF
+
+Django was created in 2003 as an inernal project at Lowrence Journal-world news paper for their web development
+
+Adrian Holovaty and Simon Willison --> Guitarist
+
+2005 for general public. --> 21st july 2005
+
+Django --> Django ReinHardt
+
+official webiste : djangoproject.com
+    The web Framework for perfectionists with deadlines.
+
+
+Top 5 features of Django Framework
+----------------------------------
+
+1.  Fast
+------
+
+Development is very Fast
+    100% of work
+    95% of the work can be done by Django itself
+    5% Developer is responsible
+
+
+20 lines of code
+     2 to 3 lines are enough
+    
+2. Fully Loaded :
+------------------
+USER AUTHENTICATION, CONTENT ADMINISTRATION,RSS FEED....
+
+3.  SECURITY
+----------------------------
+    SQL Injection Attack
+
+    select *from  users where name='xxx' and pwd='yyy'
+
+    name=daiyan
+    pwd=alam
+
+
+    name=daiyan'--
+    pwd=sunny
+
+    select *from users where name='daiyan'--' and pwd='sunny'
+
+
+    -- comment in SQL
+
+
+4. Scalability:
+-----------
+
+100 requests
+
+500 requests
+
+500000 requests
+
+
+5. Versatile :
+------
+
+youtube
+nasa
+university webiste
+
