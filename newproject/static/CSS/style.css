@@ -1,0 +1,15 @@
+body{
+  background: url(https://t4.ftcdn.net/jpg/01/95/73/03/360_F_195730369_Fi6XI2ORrPgnxtZ000SqW5lY6wlNXW5d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+.container .jumbotron {
+    margin-top:  100px
+}
+.jumbotron{
+  background-color: red;
+  padding: 20px;
+}
+a{
+  width: 150px;
+}

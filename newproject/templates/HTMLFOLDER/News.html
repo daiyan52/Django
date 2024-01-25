@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "CSS/News.css"%}">
+  </head>
+  <body>
+    {% if type == 'Admission'%}
+    <h1 align="center">{{eng}}</h1>
+    <div class="container">
+      <div class="card">
+        <img src="{% static "images/images1.jpeg"%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static "images/images2.jpeg"%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static "images/images3.jpeg"%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static "images/images4.jpeg"%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+        </div>
+      </div>
+    </div>
+    {% elif type == 'Sports' %}
+      <h1 align="center">{{eng}}</h1>
+      <div class="container">
+        <div class="card">
+          <img src="{% static "images/images5.jpeg"%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+        <div class="card">
+          <img src="{% static "images/images6.jpeg"%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+          </div>
+        </div>
+      </div>
+      {% elif type == 'Placement' %}
+        <h1 align="center">{{eng}}</h1>
+        <div class="container">
+          <div class="card">
+            <img src="{% static "images/images7.jpeg"%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static "images/images8.jpeg"%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static "images/images9.jpeg"%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static "images/images10.jpeg"%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static "images/images11.jpeg"%}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+            </div>
+          </div>
+        </div>
+    {% endif %}
+  </body>
+</html>
