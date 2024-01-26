@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body class="container-fluid mt-5">
+        <h1 align="center">Student Details</h1>
+        {% if stu_list %}
+        <table class="table">
+            <thead class="bg-danger">
+              <tr>
+                <th scope="col">Sl No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Roll No.</th>
+                <th scope="col">Department</th>
+                <th scope="col">Age</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for stu in stu_list %}
+              <tr>
+                <th scope="row">{{forloop.counter}}</th>
+                <td>{{stu.name}}</td>
+                <td>{{stu.roll_no}}</td>
+                <td>{{stu.dept}}</td>
+                <td>{{stu.age}}</td>
+              </tr>
+             {% endfor %} 
+            </tbody>
+        </table>
+        {% else %}
+          <p>No Record Found</p>
+        {% endif %}
+    </body>
+</html>
