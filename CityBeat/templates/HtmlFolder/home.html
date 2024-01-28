@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Bootstrap Jumbotron with Button</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body class="container-fluid">
+    <div class="jumbotron custom-jumbotron">
+        <h1 class="display-4">Hello CityBeat Explorer!</h1>
+        <p class="text-success">Navigate Your IT Journey with <span class="text-danger">CityBeat</span> Job Portal</p>
+        <hr class="my-4">
+        <p class="text-secondary">Start exploring opportunities with us. Happy browsing!</p>
+        <div class="button-container">
+            <a class="btn btn-danger btn-lg" href="./kolkatajobs" role="button">Kolkata</a>
+            <a class="btn btn-danger btn-lg" href="#" role="button">Delhi</a>
+            <a class="btn btn-danger btn-lg" href="#" role="button">Bengaluru</a>
+            <a class="btn btn-danger btn-lg" href="#" role="button">Hyderabad</a>
+        </div>
+    </div> 
+</body>
+</html>

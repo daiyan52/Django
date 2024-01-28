@@ -1,0 +1,74 @@
+p{
+    font-size: 30px;
+}
+body {
+    background: url('https://img.freepik.com/premium-photo/she-is-brilliant-programmer-nerdy-young-computer-programmer-poring-data-software-network-interface-ai-generative-female-software-developer-coding-concentrating_28914-6227.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.5; */
+  } 
+
+  .display-4 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333; /* Choose your desired text color */
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: scale(0.9);
+    opacity: 0;
+    animation: scaleIn 0.8s ease-in-out forwards;
+  }
+  
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .custom-jumbotron {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 30px;
+    width: 70%;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+  }
+a{
+    width: 180px;
+    color: #060807;    
+}
+.btn{
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+  .button-container a {
+    margin-right: 20px; /* Adjust the margin as needed */
+    /* padding: 10px; Adjust the padding as needed */
+  }
+  .button-container a.btn:hover {
+    background-color: #060807; /* Change the background color on hover */
+    color: #f90707; /* Change text color on hover */
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+
+
+  }
+  
