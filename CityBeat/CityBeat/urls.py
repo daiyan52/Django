@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.Home_View),
     path('kolkatajobs/', views.Kolkata_View),
+    path('registration/', views.EmployeeForm_view),
 ]

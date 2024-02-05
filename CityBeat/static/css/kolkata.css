@@ -1,11 +1,15 @@
+
 .card {
     border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(231, 13, 13, 0.1);
     overflow: hidden;
     transition: transform 0.5s ease-in-out;
   }
-  
+  img{
+    height: 20rem;
+    aspect-ratio: 3/2;
+  }
   .float-up:hover {
     transform: translateY(-10px);
   }
@@ -37,4 +41,39 @@
 .d-flex{
     display: flex;
     flex-wrap: wrap;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+th, td {
+  border: 1px solid hwb(0 94% 4%);
+  padding: 12px;
+  text-align: left;
+}
+ 
+th {
+  background-color: #f2f2f2;
+}
+
+/* Add a hover effect to the table rows */
+/* tbody tr:hover {
+  background-color: #f08e8e;
+} */
+
+/* Add a fade-in animation to the table rows */
+tbody tr {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }

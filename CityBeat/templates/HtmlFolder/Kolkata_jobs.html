@@ -5,34 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Bootstrap Jumbotron with Button</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" 
+  integrity="sha384-Wg5+E3/6UpDHv1s2XH4z/6WxF+Ud5ANjaVA0H6g5OqJkFZa6mEjYpgu3S93h8mzR" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <title>Kolkata Jobs</title>
   <link rel="stylesheet" href="{% static 'css/kolkata.css' %}">
 </head>
-<body>
-    <div class="d-flex justify-content-lg-between">
-        <div class="card me-5" style="width: 22rem;">
-            <img class="card-img-top" src="{% static 'images/images1.jpeg'%}" alt="Howrah Bridge">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-        <div class="card me-5" style="width: 22rem;">
-            <img class="card-img-top" src="{% static 'images/images2.jpeg'%}" alt="Howrah Bridge">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-        <div class="card" style="width: 22rem;">
-            <img class="card-img-top" src="{% static 'images/images3.jpeg'%}" alt="Howrah Bridge">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+<body class="container-fluid mt-5">
+  <div class="container mt-5 animated fadeInUp">
+    <h4 class="text-center">Rewarding Achievement with Adventure As a Placed Graduate, Visit Stunning Locations!</h4>
+  </div>
+  <div class="d-flex justify-content-lg-between">
+    <div class="card me-lg-3" style="width: 25rem;">
+        <img class="card-img-top" src="{% static 'images/images1.jpeg' %}" style="height: 300px;" alt="Howrah Bridge">
+        <div class="card-body">
+            <p class="card-text"><span class="text-danger lead">Howrah Bridge</span> <span class="text-success">&nbspconnects cities, symbolizing history and culture in Kolkata </span></p>
         </div>
     </div>
+
+    <div class="card me-lg-3" style="width: 25rem;">
+      <img class="card-img-top" src="{% static 'images/images2.jpeg' %}" style="height: 300px;" alt="Howrah Bridge">
+      <div class="card-body">
+        <p class="card-text"><span class="text-danger lead">Victoria Memorial</span><span class="text-success">&nbsp;is a large marble monument dedicated to Queen Victoria</span></p>
+  
+      </div>
+    </div>
+    <div class="card ms-lg-3" style="width: 25rem;">
+        <img class="card-img-top" src="{% static 'images/images3.jpeg' %}" style="height: 300px;" alt="Howrah Bridge">
+        <div class="card-body">
+          <p class="card-text"><span class="text-danger lead">Biswa Bangla Gate</span><span class="text-success">&nbsp;Grand symbol in Kolkata representing Bengal's rich culture and architectural excellence</span></p>
+        </div>
+    </div>
+  </div>
+   
+  <div class="container mt-5 animated fadeInUp">
+    <h4 class="text-center">Unlock Your Future, Land Your Dream Job apply Now!</h4>
+  </div>
+
     {% if job_list%}
     <table class="table mt-5">
-        <thead>
-          <tr>
+        <thead class="bg-danger">
+          <tr class="text-primary">
+            <th scope="col">Sl/No.</th>
             <th scope="col">Estd.</th>
             <th scope="col">Company</th>
             <th scope="col">Position</th>
@@ -40,19 +55,21 @@
             <th scope="col">Location</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
+            <th scope="col">&nbsp;&nbsp;&nbsp;<h4 class="fas fa-paper-plane"></h4></th>
           </tr>
         </thead>
         <tbody>
         {% for job in job_list %}
           <tr>
-            <th scope="row">1</th>
+            <th scope="row" class="text-primary">{{forloop.counter}}.</th>
             <td>{{job.estd}}</td>
             <td>{{job.company}}</td>
             <td>{{job.position}}</td>
             <td>{{job.eligibility}}</td>
             <td>{{job.location}}</td>
-            <td>{{job.email}}</td>
+            <td>{{job.location}}</td>
             <td>{{job.phone}}</td>
+            <td><a href="/registration" class="btn btn-primary" target="_blank">Apply</a></td>
           </tr>
         {% endfor %}
         </tbody>

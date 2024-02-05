@@ -5,21 +5,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>Bootstrap Jumbotron with Button</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.16.0/font/bootstrap-icons.css" 
+  integrity="sha384-Wg5+E3/6UpDHv1s2XH4z/6WxF+Ud5ANjaVA0H6g5OqJkFZa6mEjYpgu3S93h8mzR" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <title>CityBite Home Page</title>
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
 <body class="container-fluid">
-    <div class="jumbotron custom-jumbotron">
-        <h1 class="display-4">Hello CityBeat Explorer!</h1>
-        <p class="text-success">Navigate Your IT Journey with <span class="text-danger">CityBeat</span> Job Portal</p>
-        <hr class="my-4">
-        <p class="text-secondary">Start exploring opportunities with us. Happy browsing!</p>
-        <div class="button-container">
-            <a class="btn btn-danger btn-lg" href="./kolkatajobs" role="button">Kolkata</a>
-            <a class="btn btn-danger btn-lg" href="#" role="button">Delhi</a>
-            <a class="btn btn-danger btn-lg" href="#" role="button">Bengaluru</a>
-            <a class="btn btn-danger btn-lg" href="#" role="button">Hyderabad</a>
+    <div class="header">
+        <nav class="navbar navbar-light bg-danger">
+            <div class="container-fluid">
+                <span class="navbar-text">
+                    <a href="tel:+91 8102472607"><h4 class="fa fa-phone text-white">&nbsp;8102472607</h4></a>
+                </span>
+                <span>
+                    <marquee direction="left" behavior="scroll" scrollamount="5">
+                        <h5>CityBeat: Your Gateway to Exciting Job Opportunities - Unlock Your Career Potential Today!</h5>
+                     </marquee>
+                </span>
+            </div>
+          </nav>
+    </div>
+
+        <div class="jumbotron custom-jumbotron">
+            <h1 class="display-4">Hello CityBeat Explorer!</h1>
+            <p class="text-success">Navigate Your IT Journey with <span class="text-danger">CityBeat</span> Job Portal</p>
+            <hr class="my-4">
+            <p class="text-secondary">Start exploring opportunities with us. Happy browsing!</p>
+            <div class="button-container">
+                <a class="btn btn-danger btn-lg" href="./kolkatajobs" target="_blank" role="button">Kolkata</a>
+                <a class="btn btn-danger btn-lg" href="#" role="button">Delhi</a>
+                <a class="btn btn-danger btn-lg" href="#" role="button">Bengaluru</a>
+                <a class="btn btn-danger btn-lg" href="#" role="button">Hyderabad</a>
+            </div>
+        </div> 
+        <hr class="bg-success w-50 mt-5">
+
+    <div class="container mt-5">
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                <form id="contact-form" action="https://formspree.io/f/xbjverlv" method="POST" class="bg-white">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">SEND MESSAGE</button>
+                </form>
+            </div>
+    
+            <div class="col-md-5">
+                <br>
+                <br>
+
+                <h2 class="text-secondary">Address</h2>
+                <p class="text-muted"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Agarpara, Kolkata, 700109</p>
+                <p class="text-muted"><i class="fas fa-phone"></i>&nbsp;&nbsp;8102472607</p>
+                <p class="text-muted"><i class="fas fa-envelope"></i>&nbsp;&nbsp;rehanalamkkr@gmail.com</p>
+    
+                <!-- Line to visually separate content -->
+                <hr class="bg-danger my-4">
+    
+                <div class="container mt-5 text-center">
+                    <h3 class="text-primary">Follow<span class="text-muted"> Me!</span></h3>
+                    <div class="btn-group mt-4">
+                        <a href="https://www.hackerrank.com/profile/rehanalamkkr" target="_blank"
+                            class="btn btn-success btn-lg">
+                            <i class="fab fa-hackerrank"></i></a>
+                        <a href="https://www.linkedin.com/in/daiyan-alam-27a076224/" target="_blank"
+                            class="btn btn-primary btn-lg">
+                            <i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/daiyan52" target="_blank" class="btn btn-dark btn-lg">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/a_mighty_ruler_/" target="_blank"
+                            class="btn btn-danger btn-lg">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> 
-</body>
+    </div>
+    
+ </body>
 </html>
