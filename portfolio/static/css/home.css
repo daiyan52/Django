@@ -1,0 +1,16 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+}

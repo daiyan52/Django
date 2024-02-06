@@ -1,0 +1,43 @@
+{% extends 'testapp/base.html' %}
+{% load static%}
+{% block content%}
+{% block css_block%}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{%endblock%}
+{% include 'testapp/nav.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card teal darken-3">
+                    <div class="card-content white-text">
+                        <img class="materialboxed responsive-img" width="650" src="{% static 'images/profile.png'%}">
+                        <br>
+                        <span class="card-title center-align">Daiyan Alam</span>
+                    </div>
+                    <div class="card-action center-align">
+                      <a href="https://www.linkedin.com/in/daiyan-alam-27a076224/" target="_blank">LinkedIn</a>
+                      <a href="https://github.com/daiyan52" target="_blank">Github</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m8">
+                <div class="card teal lighten-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">About Me</span>
+                    <p>My area of expertise in my bachelor's programme is 
+                      information technology. I'm skilled in Django, ReactJs, and NodeJs to create creative solutions. I'm excited to keep learning more in this exciting and ever-changing area.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+{% endblock%}
+
+{% block script%}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems);
+          });        
+    </script>
+{% endblock%}

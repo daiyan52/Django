@@ -1,0 +1,121 @@
+{% extends 'testapp/base.html' %}
+{% block content%}
+{% load static %}
+{% block css_block%}
+    <link rel="stylesheet" href="{% static 'css/lang.css' %}">
+{% endblock %}
+    {% include 'testapp/nav.html' %}
+    <div class="container">
+        <ul class="collection">
+            <li class="collection-item avatar">
+              <img src="{% static 'images/C.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">C</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>            
+              </a>
+            </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/java.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">Java</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>            
+              </a>
+            </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/python.jpeg'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">python</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>            
+              </a>
+             </li>
+
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/Django.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">Django</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>            
+              </a>
+             </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/Reactjs.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">ReactJs</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>            
+              </a>
+            </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/Nodejs.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">NodeJs</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>            
+              </a>
+             </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/sql.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">Sql</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </a>
+            </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/mongodb.png'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">MongoDb</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </a>
+            </li>
+
+            <li class="collection-item avatar">
+              <img src="{% static 'images/Ml.jpeg'%}" alt="" class="circle">
+              <p style="margin : 10px" class="text-danger lead">Data Science</p>
+              <a href="#" class="secondary-content">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </a>
+            </li>
+        </ul>
+                    
+    </div>
+{%endblock%}
