@@ -1,0 +1,9 @@
+{% extends 'pages/base.html'%}
+{% block content %}
+    { % if request.COOKIES %}
+    <div>
+        {% for key in request.COOKIES.items %}
+        <h1>{{ key }} {{value}}</h1>
+        {% endfor %}
+    </div>
+{% endblock %}

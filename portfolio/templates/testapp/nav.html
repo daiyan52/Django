@@ -1,24 +1,56 @@
 <!DOCTYPE html>
-{% load static%}
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{% static 'css/nav.css'%}">
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-              <a href="/" class="brand-logo">Portfolio</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="/langauge">Skills</a></li>
-                <li><a href="/project">Project</a></li>
-                <li><a href="/contact">Contacts</a></li>
-              </ul>
-            </div>
-        </nav>        
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+
+        a:hover {
+        text-decoration: none;
+        color: #00f;
+        opacity: 0.3;
+        background : none !important;
+      }
+    </style>
+  </head>
+  <body>
+    {% comment %} <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo">&nbsp;&nbsp;Portfolio</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/langauge" style="font-size: 20px !important;">Skills</a></li>
+          <li><a href="/project" style="font-size: 20px !important;">Project</a></li>
+          <li><a href="/contact" style="font-size: 20px !important;">Contacts&nbsp;&nbsp;</a></li>
+        </ul>
+      </div>
+    </nav>   {% endcomment %}
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo">&nbsp;&nbsp;Portfolio</a>
+        <a href="/" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/langauge" style="font-size: 20px !important;">Skills</a></li>
+          <li><a href="/project" style="font-size: 20px !important;">Project</a></li>
+          <li><a href="/contact" style="font-size: 20px !important;">Contacts&nbsp;&nbsp;</a></li>
+        </ul>
+      </div>
+    </nav>
+  
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/langauge" style="font-size: 20px !important;">Skills</a></li>
+          <li><a href="/project" style="font-size: 20px !important;">Project</a></li>
+          <li><a href="/contact" style="font-size: 20px !important;">Contacts&nbsp;&nbsp;</a></li>
+    </ul>
+             
+  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });  
+  </script>
 </html>

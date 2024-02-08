@@ -1,11 +1,9 @@
 {% extends 'testapp/base.html' %}
-{% block content%}
 {% load static %}
-{% block css_block%}
-    <link rel="stylesheet" href="{% static 'css/lang.css' %}">
-{% endblock %}
+{% block content%}
     {% include 'testapp/nav.html' %}
-    <div class="container">
+     <div class="container container-sm" style="margin-top:50px;">
+      <div class="col s12">
         <ul class="collection">
             <li class="collection-item avatar">
               <img src="{% static 'images/C.png'%}" alt="" class="circle">
@@ -115,7 +113,7 @@
                 <i class="far fa-star"></i>
               </a>
             </li>
-        </ul>
-                    
+        </ul>            
     </div>
+     </div>
 {%endblock%}

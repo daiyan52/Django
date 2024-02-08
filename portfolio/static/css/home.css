@@ -4,12 +4,13 @@
 }
 
 .container{
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 p{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
 }
 a{
     text-decoration: none;

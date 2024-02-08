@@ -1,22 +1,34 @@
-{% extends 'testapp/base.html'%}
-{% block content %}
-{% include 'testapp/nav.html'%}
-    <div class="container">
-        <div class="row">
-            <form class="col s12">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input id="icon_prefix" type="text" class="validate">
-                    <label for="icon_prefix">First Name</label>
-                </div>
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">phone</i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Telephone</label>
-                </div>
-            </form>
-          </div>
-                
-    </div>
+{% extends 'testapp/base.html' %}
 
+{% block content %}
+    {% include 'testapp/nav.html' %}
+    <div class="container container-sm" style="margin-top:50px;">
+        <form class="col s12" action="https://formspree.io/f/xbjverlv" method="POST">
+            <div class="input-field col s12 mt-5">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate" name="name">
+                <label for="icon_prefix">Name</label>
+            </div>
+            <div class="input-field col s12 mt-5">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate" name="phone">
+                <label for="icon_telephone">phone</label>
+            </div>
+            <div class="input-field col s12 mt-5">
+                <i class="material-icons prefix">email</i>
+                <input id="email" type="email" class="validate" name="email">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12 mt-5">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea" name="message"></textarea>
+                <label for="icon_prefix2">Message</label>
+            </div>
+            <div class="input-field col s12 center-align mt-5">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Send
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>                
+        </form>            
+    </div>
 {% endblock %}

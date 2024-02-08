@@ -1,0 +1,17 @@
+{%extends 'pages/base.html' %}
+
+{% block content%}
+
+{% block css_block%}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+<div class="jumbotron text-center">
+    <p class="display-4">Item Details</p>
+    <a class="btn btn-primary btn-lg mr-5" href="/addItem" role="button">Add Item</a>
+    &nbsp;&nbsp;&nbsp;
+    <a class="btn btn-primary btn-lg" href="/listItem" role="button">List Item</a>
+</div>
+
+{% endblock%}
