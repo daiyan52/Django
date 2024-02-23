@@ -1,0 +1,39 @@
+{% extends 'pages/base.html' %}
+
+
+{% block content %}
+
+{% if stu_list%}
+<div class="container container-sm" style="margin-top:100px;">
+  <h3 class="center-align">NIT Student Details <span style="widht:200px;"><a  href="/insert" class="btn btn-primary yellow darken-2">Insert</a>
+  </span></h3>
+<table class="centered">
+    <thead class="red darken-1">
+      <tr>
+          <th>Name</th>
+          <th>Roll No.</th>
+          <th>Student_Id</th>
+          <th>Address</th>
+          <th>Operations</th>
+      </tr>
+    </thead>
+    {% for stu in stu_list%}
+    <tbody>
+      <tr>
+        <td>{{stu.name}}</td>
+        <td>{{stu.roll}}</td>
+        <td>{{stu.student_id}}</td>
+        <td>{{stu.address}}</td>
+        <td>
+          <a href="/update/{{stu.id}}" class="btn btn-primary light-blue">Update</a>
+          <a href="/delete/{{stu.id}}" class="btn btn-danger red darken-4">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>No items found</p>
+  {% endif %}
+</div>
+{% endblock %}

@@ -6,5 +6,6 @@ urlpatterns = [
     path('langauge/', views.languageView),
     path('project/', views.projectView),
     path('contact/', views.contactView),
+    path('certificate/', views.certificateView),
 
 ]

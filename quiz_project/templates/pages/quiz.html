@@ -1,0 +1,26 @@
+<!-- quiz/templates/quiz/quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+</head>
+<body>
+    <h1>Quiz</h1>
+    <form method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+        <h3>{{ question.question_text }}</h3>
+        <input type="radio" id="option1" name="{{ question.id }}" value="{{ question.option1 }}">
+        <label for="option1">{{ question.option1 }}</label><br>
+        <input type="radio" id="option2" name="{{ question.id }}" value="{{ question.option2 }}">
+        <label for="option2">{{ question.option2 }}</label><br>
+        <input type="radio" id="option3" name="{{ question.id }}" value="{{ question.option3 }}">
+        <label for="option3">{{ question.option3 }}</label><br>
+        <input type="radio" id="option4" name="{{ question.id }}" value="{{ question.option4 }}">
+        <label for="option4">{{ question.option4 }}</label><br><br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

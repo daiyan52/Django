@@ -12,3 +12,6 @@ def projectView(request):
 
 def contactView(request):
     return render(request, 'testapp/contact.html')
+
+def certificateView(request):
+    return render(request, 'testapp/certificate.html')
