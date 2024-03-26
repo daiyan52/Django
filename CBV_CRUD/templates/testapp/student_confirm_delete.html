@@ -1,0 +1,12 @@
+{% extends "testapp/base.html" %}
+
+
+{% block content %}
+    <h3>Are you sure to delete <span class="text-lead text-danger">{{student.name}}</span>'s Details</h3>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a href="/" class="btn btn-primary">cancel</a>
+    </form>
+{% endblock%}
+    

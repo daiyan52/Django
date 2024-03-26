@@ -1,0 +1,22 @@
+{% extends "testapp/base.html" %}
+
+{% block content %}
+<h1 class="text-primary">Student List</h1>
+<ol>
+    {% for student in student_list %}
+    {% comment %} <li><a href="/{{student.id}}">{{ student.name }}</a></li> {% endcomment %}
+    <li><a href="{% url 'StudentDetail' student.id %}">{{ student.name }}</a></li>
+    {% endfor %}
+</ol>
+<a href="/create" class="btn btn-primary">Add Student</a>
+
+<style>
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: black;
+    }
+</style>
+{% endblock %}
+

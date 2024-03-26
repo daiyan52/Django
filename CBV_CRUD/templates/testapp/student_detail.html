@@ -1,0 +1,16 @@
+{% extends "testapp/base.html" %}
+
+{% block content %}
+<h1 class="text-center text-primary">Student List</h1>
+<h3 class="text-success">{{student.name}}'s  Information</h3>
+<ul>
+    <li>{{student.roll}}</li>
+    <li>{{student.address}}
+</ul>
+<a href="/update/{{student.id}}" class="btn btn-warning">Update</a>
+<a href="/" class="btn btn-success">List All</a>
+<a href="/delete/{{student.id}}" class="btn btn-danger">Delete</a>
+
+
+{% endblock %}
+    
